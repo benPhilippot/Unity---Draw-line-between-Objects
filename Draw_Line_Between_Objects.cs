@@ -1,15 +1,12 @@
 using UnityEngine;
 
+[ExecuteInEditMode]
+
 public class Draw_Line_Between_Objects : MonoBehaviour
 {
     [SerializeField] private LineRenderer line;
     [SerializeField] private GameObject ObjectA;
     [SerializeField] private GameObject ObjectB;
-
-    void OnDrawGizmos()
-    {
-        updateLineRendererPosition();
-    }
 
     void Update()
     {
